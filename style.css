@@ -1,1 +1,41 @@
+@charset "UTF-8";
 
+/* Style body test */
+body{
+	background-color: green;
+}
+
+/* Style titre test */
+h1{
+	padding-left: 200px;
+}
+
+
+
+
+/* Style paragraphe test */
+p.welcome{
+	color: red;
+	background-color: blue;
+	font-size: 50px;
+}
+
+p.best_movie{
+	color: blue;
+}
+
+p.best_movies{
+	color: orange;
+}
+
+p.best_movies_cat1{
+	color: red;
+}
+
+p.best_movies_cat2{
+	color: red;
+}
+
+p.best_movies_cat3{
+	color: red;
+}
