@@ -1,41 +1,56 @@
 @charset "UTF-8";
 
-/* Style body test */
-body{
-	background-color: green;
+/* Style general */
+body {
+	background: linear-gradient(to top, black, 20%, rgb(50, 51, 51));
+	color: #e0a077;
 }
 
-/* Style titre test */
-h1{
-	padding-left: 200px;
+/* Style header et footer */
+header img {
+	width: 10%;
+	border-radius: 20px;
+	display: block;
 }
 
-
-
-
-/* Style paragraphe test */
-p.welcome{
-	color: red;
-	background-color: blue;
-	font-size: 50px;
+header,
+footer {
+	width: 100%;
+	min-height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to right, rgb(3, 3, 109), rgb(144, 176, 236));
+	border-radius: 20px;
 }
 
-p.best_movie{
-	color: blue;
+nav.nav_liste {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 150px;
+	padding-right: 40px;
 }
 
-p.best_movies{
-	color: orange;
+nav.nav_liste li {
+	color: #df6011;
+}
+/* Style categories */
+
+section.the_best_movie img {
+	width: 20%;
+	min-height: 90px;
+	padding: 40px;
 }
 
-p.best_movies_cat1{
-	color: red;
+section.best_movies img {
+	width: 10%;
+	min-height: 90px;
+	padding: 35px;
 }
 
-p.best_movies_cat2{
-	color: red;
-}
-
-p.best_movies_cat3{
-	color: red;
+section.cat1 img {
+	width: 10%;
+	min-height: 90px;
+	padding: 35px;
 }
