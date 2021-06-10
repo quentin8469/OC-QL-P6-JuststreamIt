@@ -7,14 +7,8 @@ body {
 }
 
 /* Style header et footer */
-header img {
-	width: 10%;
-	border-radius: 20px;
-	display: block;
-}
 
-header,
-footer {
+header {
 	width: 100%;
 	min-height: 90px;
 	display: flex;
@@ -22,6 +16,27 @@ footer {
 	align-items: center;
 	background: linear-gradient(to right, rgb(3, 3, 109), rgb(144, 176, 236));
 	border-radius: 20px;
+}
+
+header img {
+	width: 10%;
+	border-radius: 20px;
+}
+/* Style header et footer */
+
+footer {
+	width: 100%;
+	min-height: 90px;
+	text-align: center;
+	background: linear-gradient(to right, rgb(3, 3, 109), rgb(144, 176, 236));
+	border-radius: 20px;
+}
+footer h3 {
+	color: #abd0ff;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 40px;
 }
 
 nav.nav_liste {
@@ -35,22 +50,37 @@ nav.nav_liste {
 nav.nav_liste li {
 	color: #df6011;
 }
+
 /* Style categories */
 
+section.the_best_movie {
+	display: flex;
+	flex-direction: column;
+}
+section.the_best_movie h2 {
+	font-size: 60px;
+}
 section.the_best_movie img {
-	width: 20%;
 	min-height: 90px;
 	padding: 40px;
 }
-
+section.the_best_movie div.description {
+	display: flex;
+	width: 100%;
+}
+section.the_best_movie div.description div h1 {
+	font-size: 50px;
+}
+section.the_best_movie div.description div p {
+	font-size: 30px;
+}
 section.best_movies img {
 	width: 10%;
-	min-height: 90px;
 	padding: 35px;
 }
-
-section.cat1 img {
-	width: 10%;
-	min-height: 90px;
-	padding: 35px;
+section.best_movies h2 {
+	font-size: 40px;
+}
+section.best_movies p {
+	font-size: 20px;
 }
