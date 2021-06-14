@@ -2,45 +2,42 @@
 
 /* Style body */
 body {
-	background: linear-gradient(to bottom, rgb(3, 3, 109), rgb(144, 176, 236));
-	color: #0d2ee7;
+	background: linear-gradient(to bottom, rgb(6, 6, 180), rgb(144, 176, 236));
+	color: black;
 }
 
 /* Style header et footer */
-
 header {
 	width: 99%;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
-	background: linear-gradient(to right, rgb(3, 3, 109), rgb(144, 176, 236));
+	background: linear-gradient(to right, rgb(6, 6, 180), rgb(144, 176, 236));
 	border: solid;
-	border-color: red;
+	border-color: black;
 	border-style: outset;
 	border-width: 10px;
 	border-radius: 20px;
 }
 header h1 {
 	font-size: 80px;
-	color: rgba(255, 0, 0, 0.548);
+	color: black;
 }
 header img {
-	width: 6%;
+	width: 10%;
 	border-radius: 20px;
 	padding: 15px;
 }
-
-nav.nav_liste {
+ul.nav_liste {
 	width: 15%;
 	text-align: center;
 	padding: 50px;
 }
-nav.nav_liste li {
-	font-size: 25px;
+ul.nav_liste li {
+	font-size: 30px;
 	list-style: none;
 }
-
 /* Style footer */
 footer {
 	width: 100%;
@@ -54,15 +51,16 @@ footer h3 {
 	text-align: center;
 	padding: 40px;
 }
-
 /* Style categories */
-
 section.the_best_movie {
 	display: flex;
 	flex-direction: column;
+	border: dashed;
+	border-color: black;
 }
 section.the_best_movie h2 {
 	font-size: 60px;
+	color: black;
 }
 section.the_best_movie img {
 	width: 20%;
@@ -72,8 +70,11 @@ section.the_best_movie div.description {
 	display: flex;
 	width: 100%;
 }
-section.the_best_movie div.description div h1 {
+section.the_best_movie div.description div h2 {
 	font-size: 40px;
+}
+section.the_best_movie.boutton button {
+	background-color: red;
 }
 section.the_best_movie div.description div p {
 	font-size: 30px;
@@ -81,10 +82,12 @@ section.the_best_movie div.description div p {
 section.best_movies img {
 	width: 10%;
 	padding: 35px;
+	border: dashed;
+	border-color: black;
 }
 section.best_movies h2 {
 	font-size: 40px;
-}
-section.best_movies p {
-	font-size: 20px;
+	margin: auto;
+	text-align: center;
+	padding: 40px;
 }
