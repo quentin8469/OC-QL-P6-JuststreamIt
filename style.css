@@ -95,6 +95,7 @@ section.the_best_movie div.description div p {
 /* Style categories best movies */
 section.best_movies {
 	display: flex;
+	margin-right: 30px;
 	flex-direction: column;
 }
 
