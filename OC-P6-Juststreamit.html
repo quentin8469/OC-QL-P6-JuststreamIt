@@ -9,7 +9,10 @@
 	<title>JustStreamIt_OC_P6</title>
 	<link rel="stylesheet" href="style.css" />
 	<script src="modale.js" defer></script>
+	<script src="best_movie.js" defer></script>
 	<script src="movies.js" defer></script>
+	<script src="carousel.js" defer></script>
+
 </head>
 
 <body>
@@ -22,19 +25,14 @@
 				<li><a href="">Catégorie</a></li>
 			</ul>
 		</nav>
-
-
 	</header>
 	<!-- best movie -->
 	<section class="the_best_movie">
 		<h2 id="top_movie">THE Best movie of the site</h2>
 		<div class="description">
-			<img src="img/logo.png" alt="Logo">
+			<img id="img0" src="img/logo.png" alt="Logo">
 			<div>
-				<h2 class="titre">Description of the best movie</h2>
-				<p>titre: </p>
-				<p>durée:</p>
-				<p>vue: </p>
+				<h2 class="titre"><span></span></h2>
 			</div>
 		</div>
 		<div>
@@ -45,17 +43,17 @@
 			<div class="modal-content">
 				<span class="modalclose">&times;</span>
 				<div class="info">
-					<p>Titre du film</p>
-					<p>Genre complet du film</p>
-					<p>Date de sortie</p>
-					<p>Rated</p>
-					<p>Score Imdb</p>
-					<p>Réalisateur</p>
-					<p>Liste des acteurs</p>
-					<p>Sa durée</p>
-					<p>Pays d’origine</p>
-					<p>Résultat au Box Office</p>
-					<p>Résumé du film</p>
+					<p>Titre du film: <span id="title"></span> </p>
+					<p>Genre complet du film: <span id="genres"></span></p>
+					<p>Date de sortie: <span id="date"></span></p>
+					<p>Rated: <span id="rated"></span> </p>
+					<p>Score Imdb: <span id="imdb"></span></p>
+					<p>Réalisateur: <span id="real"></span></p>
+					<p>Liste des acteurs: <span id="actors"></span></p>
+					<p>Sa durée: <span id="time"></span> min</p>
+					<p>Pays d’origine: <span id="country"></span></p>
+					<p>Résultat au Box Office: <span id="box"></span></p>
+					<p>Résumé du film: <span id="resum"></span></p>
 				</div>
 			</div>
 		</div>
@@ -65,54 +63,65 @@
 	<section class="best_movies">
 		<h2>All best movies for all categories</h2>
 		<div class="carrousel">
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
+			<div class="after nav-btn">prev</div>
+			<div class="item 1 shows"><img id="img1" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img2" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img3" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img4" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img5" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 hidden"><img id="img6" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 hidden"><img id="img7" src="img/logo.png" alt="Logo"></div>
+			<div class="befor nav-btn">next</div>
 		</div>
+
 	</section>
 	<!-- movies in category 1-->
 	<section class="best_movies">
 		<h2>All best movies for the Fantasy categorie</h2>
 		<div class="carrousel">
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
+			<div class="after f nav-btn">prev</div>
+			<div class="item 2 shows"><img id="img8" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img9" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img10" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img11" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img12" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 hidden"><img id="img13" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 hidden"><img id="img14" src="img/logo.png" alt="Logo"></div>
+			<div class="befor f nav-btn">next</div>
 		</div>
 	</section>
 	<!-- movies in category 2-->
 	<section class="best_movies">
 		<h2>All best movies for the Horror categorie</h2>
 		<div class="carrousel">
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
+			<div class="after h nav-btn">prev</div>
+			<div class="item 3 shows"><img id="img15" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img16" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img17" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img18" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img19" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 hidden"><img id="img20" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 hidden"><img id="img21" src="img/logo.png" alt="Logo"></div>
+			<div class="befor h nav-btn">next</div>
 		</div>
 
 	</section>
 	<!-- movies in category 3-->
+
 	<section class="best_movies">
 		<h2>All best movies for the Mystery categorie</h2>
 		<div class="carrousel">
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
-			<div class="item"><img src="img/logo.png" alt="Logo"></div>
+			<div class="after m nav-btn">prev</div>
+			<div class="item 4 shows"><img id="img22" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img23" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img24" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img25" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img26" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 hidden "><img id="img27" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 hidden"><img id="img28" src="img/logo.png" alt="Logo"></div>
+			<div class="befor m nav-btn">next</div>
 		</div>
+
 	</section>
 
 
