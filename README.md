@@ -10,7 +10,7 @@ Ce programme permet:
 
 * d'afficher le meilleur film,
 * d'afficher les 7 meilleurs films toutes catégories confondues,
-* d'afficher les 7 meilleurs films de trois catégories (par défaut: Action, Biography et Animation).
+* d'afficher les 7 meilleurs films de trois catégories (par défaut: Fantasy, Horror et Mystery).
 
 
 ## 2-Installation du serveur OCMOVIES :
