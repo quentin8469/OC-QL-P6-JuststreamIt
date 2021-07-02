@@ -2,17 +2,15 @@
 <html lang="fr">
 
 <head>
-	<!-- Projet 6 openclassrooms -->
-	<meta charset="utf-8" />
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JustStreamIt_OC_P6</title>
 	<link rel="stylesheet" href="style.css" />
+	<title>JustStreamIt_OC_P6</title>
 	<script src="modale.js" defer></script>
 	<script src="best_movie.js" defer></script>
 	<script src="movies.js" defer></script>
 	<script src="carousel.js" defer></script>
-
 </head>
 
 <body>
@@ -26,45 +24,45 @@
 			</ul>
 		</nav>
 	</header>
+	<!-- modal -->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="modalclose">&times;</span>
+			<div class="info">
+				<p>Titre du film: <span id="title"></span> </p>
+				<p>Genre complet du film: <span id="genres"></span></p>
+				<p>Date de sortie: <span id="date"></span></p>
+				<p>Rated: <span id="rated"></span> </p>
+				<p>Score Imdb: <span id="imdb"></span></p>
+				<p>Réalisateur: <span id="real"></span></p>
+				<p>Liste des acteurs: <span id="actors"></span></p>
+				<p>Sa durée: <span id="time"></span> min</p>
+				<p>Pays d’origine: <span id="country"></span></p>
+				<p>Résultat au Box Office: <span id="box"></span></p>
+				<p>Résumé du film: <span id="resum"></span></p>
+			</div>
+		</div>
+	</div>
 	<!-- best movie -->
+	<h2 id="top_movie">THE Best movie of the site</h2>
 	<section class="the_best_movie">
-		<h2 id="top_movie">THE Best movie of the site</h2>
 		<div class="description">
-			<img id="img0" src="img/logo.png" alt="Logo">
 			<div>
-				<h2 class="titre"><span></span></h2>
+				<h2 class="titre">bmovie_title</h2>
+			</div>
+			<div>
+				<button class="runmovie">Play movie</button>
+				<button class="modaleshow">More informations</button>
 			</div>
 		</div>
-		<div>
-			<button class="runmovie">Play movie</button>
-			<button class="modaleshow">More informations</button>
-		</div>
-		<div class="modal">
-			<div class="modal-content">
-				<span class="modalclose">&times;</span>
-				<div class="info">
-					<p>Titre du film: <span id="title"></span> </p>
-					<p>Genre complet du film: <span id="genres"></span></p>
-					<p>Date de sortie: <span id="date"></span></p>
-					<p>Rated: <span id="rated"></span> </p>
-					<p>Score Imdb: <span id="imdb"></span></p>
-					<p>Réalisateur: <span id="real"></span></p>
-					<p>Liste des acteurs: <span id="actors"></span></p>
-					<p>Sa durée: <span id="time"></span> min</p>
-					<p>Pays d’origine: <span id="country"></span></p>
-					<p>Résultat au Box Office: <span id="box"></span></p>
-					<p>Résumé du film: <span id="resum"></span></p>
-				</div>
-			</div>
-		</div>
-
+		<img id="img0" src="img/logo.png" alt="Logo">
 	</section>
 	<!-- top rated movies -->
 	<section class="best_movies">
 		<h2>All best movies for all categories</h2>
-		<div class="carrousel">
+		<div class="carrousel top-movies">
 			<div class="after nav-btn">prev</div>
-			<div class="item 1 shows"><img id="img1" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"> <img id="img1" src="img/logo.png" alt="Logo"></div>
 			<div class="item 1 shows"><img id="img2" src="img/logo.png" alt="Logo"></div>
 			<div class="item 1 shows"><img id="img3" src="img/logo.png" alt="Logo"></div>
 			<div class="item 1 shows"><img id="img4" src="img/logo.png" alt="Logo"></div>
@@ -73,12 +71,11 @@
 			<div class="item 1 hidden"><img id="img7" src="img/logo.png" alt="Logo"></div>
 			<div class="befor nav-btn">next</div>
 		</div>
-
 	</section>
 	<!-- movies in category 1-->
 	<section class="best_movies">
 		<h2>All best movies for the Fantasy categorie</h2>
-		<div class="carrousel">
+		<div class="carrousel fantasy">
 			<div class="after f nav-btn">prev</div>
 			<div class="item 2 shows"><img id="img8" src="img/logo.png" alt="Logo"></div>
 			<div class="item 2 shows"><img id="img9" src="img/logo.png" alt="Logo"></div>
@@ -93,7 +90,7 @@
 	<!-- movies in category 2-->
 	<section class="best_movies">
 		<h2>All best movies for the Horror categorie</h2>
-		<div class="carrousel">
+		<div class="carrousel horror">
 			<div class="after h nav-btn">prev</div>
 			<div class="item 3 shows"><img id="img15" src="img/logo.png" alt="Logo"></div>
 			<div class="item 3 shows"><img id="img16" src="img/logo.png" alt="Logo"></div>
@@ -107,10 +104,9 @@
 
 	</section>
 	<!-- movies in category 3-->
-
 	<section class="best_movies">
 		<h2>All best movies for the Mystery categorie</h2>
-		<div class="carrousel">
+		<div class="carrousel mystery">
 			<div class="after m nav-btn">prev</div>
 			<div class="item 4 shows"><img id="img22" src="img/logo.png" alt="Logo"></div>
 			<div class="item 4 shows "><img id="img23" src="img/logo.png" alt="Logo"></div>
@@ -123,13 +119,9 @@
 		</div>
 
 	</section>
-
-
 	<footer>
 		<h3>JustStreamIt_OC_P6, good viewing!!</h3>
 	</footer>
-
-
 </body>
 
 </html>
