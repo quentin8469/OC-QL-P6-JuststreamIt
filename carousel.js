@@ -1,7 +1,7 @@
-// carrousel all best movies
+
 slide_position = 0
 size = 5
-// carrousel all best movies
+
 let slides = document.getElementsByClassName("item 1")
 slide_length = slides.length
 let afterButton = document.querySelector(".after")
