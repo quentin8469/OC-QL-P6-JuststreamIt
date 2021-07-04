@@ -11,6 +11,7 @@ header {
 	display: flex;
 	align-items: center;
 	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+	border-radius: 20px;
 }
 header img {
 	width: 120px;
@@ -36,11 +37,13 @@ header li {
 #top_movie {
 	text-align: center;
 	border: solid;
+	border-radius: 20px;
 }
 section.the_best_movie {
 	display: flex;
 	justify-content: space-between;
 	border: solid;
+	border-radius: 20px;
 }
 
 section.the_best_movie div.description {
@@ -65,6 +68,8 @@ section.best_movies {
 }
 section.best_movies h2 {
 	border: solid;
+	border-radius: 20px;
+	padding: 10px;
 }
 section.best_movies div.carrousel {
 	padding: 5px;
@@ -80,6 +85,7 @@ section.best_movies img {
 	padding: 10px;
 	display: flex;
 	justify-content: space-between;
+	border-radius: 10px;
 }
 /* buttom for carrousel */
 .after {
@@ -136,14 +142,15 @@ section.best_movies img {
 	left: 500px;
 	width: 50%;
 	height: 50%;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.4);
 	background: none;
 }
 .modal-content {
-	background-color: #fefefe;
+	background-color: #777777;
 	padding: 10px;
 	width: 80%;
+	border: solid;
+	border-style: outset;
+	border-radius: 20px;
 }
 .modalclose {
 	color: #aaa;
@@ -162,6 +169,7 @@ section.best_movies img {
 footer {
 	width: 100%;
 	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+	border: solid;
 	border-radius: 20px;
 }
 footer h3 {
